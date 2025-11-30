@@ -1,1 +1,1 @@
-# leren-met-ai
+# Leren met AI
