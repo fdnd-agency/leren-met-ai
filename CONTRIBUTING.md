@@ -1,23 +1,144 @@
 # Team Contributing
-- [Team Canvas]()
-- [In here we write our arrangements and agreements]()
-- [Code Conventions]()
-- [Definition of Ready and Definition's of Done]()
-- [Retrospect Agreements]()
+All code is created according to the conventions of [FDND Agency](https://github.com/fdnd-agency/.github/wiki/Workflow-conventions).
 
-## Team Canvas
+## `Git workflow`
+We use the FDND [gitflow](https://www.gitkraken.com/learn/git/git-flow#the-git-flow-workflow):
+- Nobody works directly on the `development branch`!
+- Every team member works in their own `feature branch` that starts from `development`.
+- Once the work is done, you open a `Pull Request` tot `merge` your `feature branch` back into `development`.
+- Teammates `review and test` your work before it is merged.
+- The `development branch` collects all approved work and serves as the `integration branch`.
+- only after `teacher approval`, the code from development will be `merged into the main branch` as a `release`.
+- The `main branch` is alway the `stable production branch`.
 
+### How to create a branch
+![image](https://github.com/user-attachments/assets/28d0b538-718e-4b91-a93c-a337127818d4)
+- Use the `development tool` for creating new branches. Here Github automatically creates a new branch from a created issue.
+- This tool can be seen in the right column menu of an issue.
 
-## Team arrangements and agreements
+### `Branch naming convention`
+The name of a branch is: `feature-component-name` (feature-navbar)
 
+### How to make commits (e.g. “Use clear commit messages in the form of: [type]: [description]”).
+"At FDND Agency, because of Semantic Versioning, we use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/). Conventional commit is a specification, a set of rules that have to be followed when writing commit messages."
 
-## Code Conventions
+**Allowed Commit types:**
+- `build: ...` Changes that affect the build system or external dependencies
+- `chore: ...` Changes to the build process or auxiliary tools and libraries such as documentation generation
+- `ci: ...` Changes to CI configuration files and scripts (GitHub Actions, netlify.toml)
+- `docs: ...` Changes to documentation, eg: Readme.md, Handover.md or Figma files or design rationale in the Wiki
+- `feat: ...` Implementing a new feature
+- `fix: ...` Fix for a bug, style or layout issue
+- `perf: ...` A code change that improves performance
+- `refactor: ...` A code change that neither fixes a bug nor adds a feature but improves structure or readability
+- `style: ...` Changes that affect readability but not the working of the code (source formatting, adding tabs or newline)
+- `test: ...` Adding missing or correcting existing tests
 
+> Bron: [Conventional conventions](https://github.com/fdnd-agency/.github/wiki/Workflow-conventions#conventional-commits) - FDND Agency conventions
 
-## Definition of Ready
+## How to create and review pull requests.
+Use the pull request template which you automagically get when creating a PR in one of our repositories.
 
+Please make sure you follow the following rules:
+- Write small PR's
+- Review your own PR first
+- Provide context and guidance
 
-## Definition of Done
+> Bron: [Pull request](https://github.com/fdnd-agency/.github/wiki/Workflow-conventions#pull-request) - FDND Agency conventions
 
+## Workflow
 
-## Retrospect Agreements
+### `Issues`
+We work based on issues in the projectboard.
+`An issue can be:`
+- a `feature` (new functionality or component),
+- a `bug` (fixing errors),
+- a `task` (supporting work such as refactoring or styling),
+- or `documentation` (README, design notes, handover).
+
+We use `epics --> user stories --> tasks` to break work into manageable parts. Each issue is small, clear, and `assigned to at least one team member with a deadline`.
+
+### `MoSCoW prioritisation`
+We prioritise issues with the `MoSCoW` method:
+- `Must have:` essential for delivery.
+- `Should have:` important but not critical.
+- `Could have:` nice to have extras.
+- `Wont have (for now):` not included this sprint.
+
+### `Projectboard rules`
+- Each week, one team member is responsible for maintaining clarity and order on the projectboard.
+- Do not assign too many tasks to yourself at once.
+- Set realistic deadlines when you pick up an issue.
+- Keep the board up to date: correct columns, labels & assignees.
+
+### `Documentation rules`
+
+- Write clearly in issues what you have done and document iterations of your work.
+- Make small commits with clear descriptions.
+- Pull requests must include guidance on what specifically needs to be reviewed, supported with screenshots or recordings.
+- Check with teammates whether documentation is clear.
+- Document in the README which features have been implemented.
+
+## `Definition of Ready (DoR)`
+- The story has a clear title and description  
+- Includes a checklist with acceptance criteria
+- All required information and files are available
+- Poker planning has been completed
+- Everyone in the team understands the story
+
+## `Definition of Done (DoD)`
+- Code runs without errors
+- All acceptance criteria of the story are met
+- Code has been reviewed by a team member
+- Functionally tested
+- Merged into the `dev` branch
+- Deployed to the test environment
+
+## `Delivery checklist`
+Before delivery, make sure:
+- README.md is complete.
+- Projectboard is up-to-date with all issues (closed,prioritised).
+- All code reviewed and tested (lighthouse-, accessibility-, browser/device-, usertests).
+- No open pull requests remain.
+- Code is clean: unused files/code removed, structure refactored.
+
+## Teamcanvas & collaboration rules
+<img width="818" height="580" alt="Scherm­afbeelding 2025-12-03 om 22 37 43" src="https://github.com/user-attachments/assets/bcdf6ef8-4190-4c8b-af31-3573f4409d86" />
+
+### `Shared goals`
+- Share knowledge within the group and apply it in tje project.
+- Support each other in achieving personal learning goals.
+
+### `Personal learning goals`
+1. [Akiko:](https://github.com/)
+-
+-
+- 
+  
+2. [Inez:](https://github.com/)
+- 
+- 
+  
+3. [Nadira:](https://github.com/Naddybsx)
+- How can i keep overview and control of my daily tasks?
+- Which learning strategies can i use to acquire new knowledge quickly and purposefully without getting stuck in theory?
+- How can i learn to recognize when i am stuck and communicate this in time?
+
+### `Core values`
+> Respect diffrences within the team
+
+> Help each other
+
+> Listen actively to teammates
+
+### Team arrangements & agreements
+- Stand-ups at the start of every class day (mon/wed/fri).
+- Keep track of tasks and progress in the [projectboard](https://github.com/orgs/fdnd-agency/projects/98).
+- Ask questions openly (Teams, github, school).
+- Communicate clearly: share progress and blockers(also if absent).
+- Follow coding conventions.
+- Ask and give feedback regularly.
+- Share and discuss learning goals.
+
+# Retrospect agreements
+(...)
