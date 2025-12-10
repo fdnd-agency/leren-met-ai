@@ -21,16 +21,16 @@
 /* ---------------------- Typography --------------------- */
 
   /* base text / body */
-  --font-size-base: clamp(16px, 1.2vw, 18px);
+  --font-size-base: clamp(1.1rem, 1.4vw, 1.225rem);
 
   /* medium text / subheadings h3 */
-  --font-size-md: clamp(17px, 1.6vw, 20px);
+  --font-size-md: clamp(1.700rem, 3.2vw, 2.5rem);
 
   /* large text / headings h2 */
-  --font-size-lg: clamp(18px, 2vw, 22px);
+  --font-size-lg: clamp(2.488rem, 4.2vw, 4.209rem);
 
   /* extra large text / main headings h1 */
-  --font-size-xl: clamp(22px, 3vw, 32px);
+  --font-size-xl: clamp(2.986rem, 6vw, 4.7rem);;
 
   /* line-height for readability */
   --line-height-base: 1.5;
