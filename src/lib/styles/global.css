@@ -1,0 +1,140 @@
+/* GLOBAL STYLES */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../assets/fonts/OpenSans-VariableFont_wdth\,wght.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+/* ---------------------- Color variables --------------------- */
+
+  --color-text: hsl(0, 0%, 0%);
+  --color-link:  hsl(0, 0%, 0%);
+  --color-bg: hsl(0, 0%, 100%, 1);
+
+  --primary-h: 249;
+  --primary-s: 71%;
+  --primary-l: 42%;
+  --color-primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+
+  /* Variants */
+  --color-primary-light: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 10%));
+  --color-primary-lighter: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 20%));
+  --color-primary-dark: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 10%));
+  --color-primary-darker: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 20%));
+
+/* ---------------------- Typography --------------------- */
+
+  /* base text / body */
+  --font-size-base: clamp(1.1rem, 1.4vw, 1.225rem);
+
+  /* medium text / subheadings h3 */
+  --font-size-md: clamp(1.700rem, 3.2vw, 2.5rem);
+
+  /* large text / headings h2 */
+  --font-size-lg: clamp(2.488rem, 4.2vw, 4.209rem);
+
+  /* extra large text / main headings h1 */
+  --font-size-xl: clamp(2.986rem, 6vw, 4.7rem);
+
+  /* line-height for readability */
+  --line-height-base: 1.5;
+  --line-height-heading: 1.2;
+
+  /* ----- Font Weights ----- */
+  --regular-weight: 400;
+  --bold-weight: 700;
+  --xbold-weight: 900;
+
+  /* ---------------------- Spacing --------------------- */  
+
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-xxl: 3rem;
+}
+
+/* ---------------------- Main styling --------------------- */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-text);
+}
+
+/* ---------------------- Headings --------------------- */
+h1, h2, h3, h4, h5, h6 {
+  line-height: var(--line-height-heading);
+  font-weight: var(--xbold-weight);
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+}
+
+h3 {
+  font-size: var(--font-size-md);
+}
+
+/* ---------------------- Basic elements --------------------- */
+
+p {
+  font-size: var(--font-size-base);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  font-weight: var(--bold-weight);
+}
+
+button {
+  border: none;
+  background: transparent;
+  font: inherit;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ---------------------- Accessibility --------------------- */
+
+:focus-visible {
+  outline: 3px solid var(--color-primary-light);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
