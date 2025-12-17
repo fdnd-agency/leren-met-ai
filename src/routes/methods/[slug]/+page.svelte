@@ -5,7 +5,7 @@
 </script>
 
 <header>
-  <a href="/">Terug naar alle methodes</a>
+  <a href="/methods">Terug naar alle methodes</a>
 </header>
 
 <article>
