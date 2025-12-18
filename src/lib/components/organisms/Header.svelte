@@ -4,7 +4,7 @@
 </script>
 
 <header>
-<button class="menu-open" popovertargetaction="show">
+<button class="menu-open" popovertarget="menupopover"  popovertargetaction="show"  aria-label="open menu">
     <svg width="24" height="24" viewBox="0 0 24 24">
         <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
 </button>
@@ -13,7 +13,7 @@
     <img src={logo} alt="HvA-Logo" class="HvA-mobiel" /> 
 </a>
 
-<button class="menu-open" popovertargetaction="hidden">
+<button class="menu-close" popovertarget="menupopover"  popovertargetaction="hidden" aria-label="sluit menu">
     <svg width="24" height="24" viewBox="0 0 24 24">
         <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
       </svg>
@@ -43,20 +43,36 @@
 
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
+.menu-open,.menu-close {
+ width: 40px;
+ height: 50px;
+ object-fit:cover;
+}
+
+.menu-close{
+    display:none;
+}
+
 img.HvA-mobiel {
-  object-fit: contain;
+  align-items: center;
+  object-fit: cover;
   width: 200px;
   height:50px;
 }
 
 .profile {
+    /* position: absolute;
+    right: 0;
+    top: 2; */
     object-fit:cover;
     width: 50px;
     height: 30px;
 }
+
 
 
 
