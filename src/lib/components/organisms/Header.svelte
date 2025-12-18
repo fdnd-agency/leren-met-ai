@@ -21,9 +21,9 @@
    
 
 <div id="menupopover" popover>
-<nav>
+<nav class="nav-mobiel">
     <ul>
-        <li><a href="/methods"></a></li>
+        <li><a href="/methods">Methoden</a></li>
     </ul>
 </nav>
 </div>
@@ -45,15 +45,35 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px;
 }
 
-.menu-open,.menu-close {
+
+button.menu-open svg,button.menu-close svg{
  width: 40px;
- height: 50px;
- object-fit:cover;
+ height: 60px;
+ /* padding: 0;   */
+ cursor: pointer;
+ /* border: none;     */
+ background: none; 
 }
 
-.menu-close{
+button.menu-open svg,button.menu-close svg {
+    width: 100%;
+    height: 100%;
+}
+
+button.menu-open:hover svg,button.menu-close:hover svg{
+ transform: scale(1.1);
+}
+
+button.menu-open:focus svg,
+button.menu-close:focus svg { 
+    outline: 2px solid transparent;
+    outline-offset: 0;
+}
+
+.menu-close svg{
     display:none;
 }
 
@@ -62,6 +82,29 @@ img.HvA-mobiel {
   object-fit: cover;
   width: 200px;
   height:50px;
+  /* transition: transform 5s ease-in; */
+}
+
+img.HvA-mobiel:hover {
+    transform: scale(1.1);
+    
+}
+
+#menupopover {
+position: absolute;
+top: 50px;
+right: 0;
+width: 80vh;
+height: 100vh;
+border: none;
+}
+
+nav ul li a {
+    padding-left: 20px;
+}
+
+a:hover {
+  color: pink;
 }
 
 .profile {
