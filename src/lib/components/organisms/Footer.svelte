@@ -21,7 +21,7 @@
   <p>Creating Tomorrow</p>
 
 </footer>
-<!-- just a test to commit so i am not scoobydoo -->
+
 <style>
   footer {
     /* background-color: #f8f9fa; */
