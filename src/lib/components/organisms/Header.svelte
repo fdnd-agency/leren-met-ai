@@ -69,21 +69,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 0 5px;
+    height: 60px;
   }
 
-  button.menu-toggle .icon {
+  button.menu-toggle  {
     width: 40px;
-    height: 60px;
-    /* padding: 0;   */
+    height: 40px;
+    padding: 0;  
     cursor: pointer;
     border: none;
     background: none;
   }
 
   button.menu-toggle .icon {
-    width: 100%;
-    height: 100%;
+    width: 40px;
+    height: 40px;
+    margin: 0;  
   }
 
   button.menu-toggle:hover .icon {
@@ -104,13 +106,14 @@ button.menu-toggle:focus svg {
     align-items: center;
     object-fit: cover;
     width: 200px;
-    height: 50px;
+    height: 60px;
+    display: block;
     /* transition: transform 5s ease-in; */
   }
 
-  img.HvA-mobiel:hover {
+  /* img.HvA-mobiel:hover {
     transform: scale(1.1);
-  }
+  } */
 
   #menupopover {
     position: absolute;
@@ -143,8 +146,9 @@ button.menu-toggle:focus svg {
 
   .profile {
     object-fit: cover;
-    width: 50px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    display: block;
   }
 
   header:has(#menupopover:popover-open) {
