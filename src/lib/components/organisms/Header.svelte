@@ -4,12 +4,12 @@
 </script>
 
 <header>
-<button class="menu-toggle" popovertarget="menupopover"  popovertargetaction="show"  aria-label="menu openen of sluiten">
+<button class="menu-toggle" popovertarget="menupopover" aria-label="menu openen of sluiten">
 
-    <svg class="menu-open" width="24" height="24" viewBox="0 0 24 24">
+    <svg class="icon-open" width="24" height="24" viewBox="0 0 24 24">
         <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-
-    <svg class="menu-close" width="24" height="24" viewBox="0 0 24 24">
+</svg>
+    <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24">
         <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
       </svg>
    </button>
@@ -66,13 +66,13 @@ button.menu-toggle:hover svg,button.menu-toggle:hover svg{
  transform: scale(1.1);
 }
 
-button.menu-toggle:focus svg,
+/* button.menu-toggle:focus svg,
 button.menu-toggle:focus svg { 
     outline: 2px solid transparent;
     outline-offset: 0;
-}
+} */
 
-.menu-close {
+.icon-close {
     display: none;
 }
 
