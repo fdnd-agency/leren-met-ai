@@ -2,9 +2,14 @@
   let { data } = $props()
 
   const { method } = data
+
+  import Header from '$lib/components/organisms/Header.svelte'
+
 </script>
 
 <header>
+
+<Header/>
   <a href="/methods">Terug naar alle methodes</a>
 </header>
 

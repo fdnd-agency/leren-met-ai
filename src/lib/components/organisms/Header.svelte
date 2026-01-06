@@ -4,21 +4,20 @@
 </script>
 
 <header>
-<button class="menu-open" popovertarget="menupopover"  popovertargetaction="show"  aria-label="open menu">
-    <svg width="24" height="24" viewBox="0 0 24 24">
+<button class="menu-toggle" popovertarget="menupopover"  popovertargetaction="show"  aria-label="menu openen of sluiten">
+
+    <svg class="menu-open" width="24" height="24" viewBox="0 0 24 24">
         <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-</button>
 
-<a href="/">
-    <img src={logo} alt="HvA-Logo" class="HvA-mobiel" /> 
-</a>
-
-<button class="menu-close" popovertarget="menupopover"  popovertargetaction="hidden" aria-label="sluit menu">
-    <svg width="24" height="24" viewBox="0 0 24 24">
+    <svg class="menu-close" width="24" height="24" viewBox="0 0 24 24">
         <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
       </svg>
    </button>
-   
+
+   <a href="/">
+    <img src={logo} alt="HvA-Logo" class="HvA-mobiel" /> 
+</a>
+
 
 <div id="menupopover" popover>
 <nav class="nav-mobiel">
@@ -63,18 +62,18 @@ button.menu-open svg,button.menu-close svg {
     height: 100%;
 }
 
-button.menu-open:hover svg,button.menu-close:hover svg{
+button.menu-toggle:hover svg,button.menu-toggle:hover svg{
  transform: scale(1.1);
 }
 
-button.menu-open:focus svg,
-button.menu-close:focus svg { 
+button.menu-toggle:focus svg,
+button.menu-toggle:focus svg { 
     outline: 2px solid transparent;
     outline-offset: 0;
 }
 
-.menu-close svg{
-    display:none;
+.menu-close {
+    display: none;
 }
 
 img.HvA-mobiel {
