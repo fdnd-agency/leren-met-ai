@@ -6,10 +6,10 @@
 <header>
 <button class="menu-toggle" popovertarget="menupopover" aria-label="menu openen of sluiten">
 
-    <svg class="icon-open" width="24" height="24" viewBox="0 0 24 24">
+    <svg class="icon icon-open" width="24" height="24" viewBox="0 0 24 24">
         <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
 </svg>
-    <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24">
+    <svg class="icon icon-close" width="24" height="24" viewBox="0 0 24 24">
         <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
       </svg>
    </button>
@@ -48,21 +48,21 @@ header {
 }
 
 
-button.menu-open svg,button.menu-close svg{
+button.menu-toggle .icon{
  width: 40px;
  height: 60px;
  /* padding: 0;   */
  cursor: pointer;
- /* border: none;     */
+ border: none;    
  background: none; 
 }
 
-button.menu-open svg,button.menu-close svg {
+button.menu-toggle .icon {
     width: 100%;
     height: 100%;
 }
 
-button.menu-toggle:hover svg,button.menu-toggle:hover svg{
+button.menu-toggle:hover .icon{
  transform: scale(1.1);
 }
 
@@ -115,8 +115,13 @@ a:hover {
     height: 30px;
 }
 
+header:has(#menupopover:popover-open) .icon-open {
+    display: none;
+} 
 
-
+header:has(#menupopover:popover-open) .icon-close {
+    display: block;
+} 
 
 
 </style>
