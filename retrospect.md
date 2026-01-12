@@ -1,15 +1,19 @@
 Retrospective – The Good, The Bad & The Ugly
 
-The Good:
-Within the team, there was active and open communication between several team members, which helped keep tasks and progress mostly clear. The team showed willingness to collaborate and provide feedback during both the sprint and the retrospective.
+The Good
+Throughout the sprint, the team demonstrated a strong willingness to collaborate. Communication between several team members was open and constructive, which helped keep tasks, responsibilities, and progress mostly transparent. Team members actively shared feedback during both the sprint and the retrospective, creating a supportive environment focused on improvement.
 
-The Bad:
-Communication was not equally accessible for everyone. One team member (inez) tended to isolate herself, which made alignment more difficult. In addition, we delivered relatively little code during this sprint.
+The Bad
+Although collaboration within the team was generally positive, the level of communication was not consistent across all members. There was less overall communication from one team member, which occasionally led to misalignment and fewer opportunities to address questions or issues at an early stage.
 
-The Ugly:
-At the start, the assignment was unclear and offered a high level of freedom, which led to hesitation and delayed decision-making. This negatively impacted our productivity and the amount of code we produced. During the retrospective, we discussed this openly and agreed on improvements. We decided to document important information in writing so it can be reviewed later, taking into account her hearing limitations. Additionally, we agreed that everyone is responsible for communicating when something is not working or when they need help.
-For future sprints, we aim to start coding earlier and focus first on implementing core functionality. Once a stable foundation is in place, we can build more creative and advanced features on top of it.
+The Ugly
+At the beginning of the project, the assignment lacked clear direction and allowed a high level of creative freedom. While this could have been an advantage, it instead caused uncertainty and delayed decision-making within the team. As a result, productivity suffered and less code was produced than planned.
 
-Campfiresession:
-Inez needs to communicate more
+Retrospect agreements
+During the retrospective, we addressed these challenges openly and constructively. The team agreed to document important discussions and decisions in writing so they can be revisited later, especially considering accessibility needs related to hearing limitations. We also agreed that every team member shares responsibility for speaking up when something is unclear, not working, or when help is needed.
 
+For future sprints, we aim to start coding earlier and prioritize core functionality first. Once a stable foundation is established, we can then focus on adding more creative and advanced features.
+
+Campfire Session
+
+A key takeaway from the campfire session was the importance of active communication from everyone. Inez, in particular, will work on communicating more consistently with the team, while the team will ensure communication remains accessible and inclusive for all members.
