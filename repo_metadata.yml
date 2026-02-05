@@ -1,5 +1,7 @@
 title: "Leren met AI"
-status: "in progress"
+client: "HvA"
+status: "active"
+years: [2]
 main_link: "https://lerenmetai.agency.fdnd.nl/"
 dev_link: "https://lerenmetai.dev.fdnd.nl/"
 tech_stack: ["SvelteKit", "Directus"]
