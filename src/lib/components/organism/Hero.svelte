@@ -76,6 +76,7 @@ header.hero {
     flex-direction: column;
     align-items: center;
     z-index: 2;
+    position: relative;
 }
 
 h1 {
@@ -84,50 +85,55 @@ h1 {
 
 .light-bulb {
     position: absolute;
-    top: 40px;
+    top: 50px;
     right: 0;
-    width: 80px;
+    width: clamp(60px, 10vw, 100px);
 }
 
 .triangles {
   position: absolute;
   top: 60px;
   left: 0;
-  width: 100px;
   z-index: 0;
 }
 
 .triangle-dark {
   position: absolute;
-  top: 30px;
+  /* top: 40px; */
+  top: clamp(40px, 5vw, 65px);
   left: 0;
-  width: 120px;
+  width: clamp(90px, 16vw, 140px);
   z-index: 1;
 }
 
 .triangle-pink {
     position: absolute;
-    top: 150px;
+    top: clamp(140px, 25vw, 220px);
     left: 0;
-    width: 60px;
+    width: clamp(40px, 8vw, 70px);
     fill: var(--pink);
     z-index: 1;
 }
 
 .pink-robot {
-    width: 80px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: clamp(65px, 10vw, 100px);
     z-index: 0;
 }
 
 .large-logo {
-    width: 260px;
-    padding-left: 30px;
+    width: clamp(220px, 45vw, 320px);
+    /* width: 260px; */
+    /* padding-left: 30px; */
+    transform: translate(10px);
     margin: 0 auto;
     display: block;
 }
 
 .teachers {
-    width: 300px;
+    width: clamp(260px, 75vw, 420px);
     z-index: 2;
 }
 
