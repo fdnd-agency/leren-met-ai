@@ -2,8 +2,13 @@
   export let method;
 </script>
 
-<article>
+<article class="method-card">
   <h3>{method.title}</h3>
   <p>{method.description}</p>
-  <a href="/methods/{method.slug}">Bekijk {method.title}</a>
+  <span>Filter type</span>
+  <a href="/methods/{method.slug}">Bekijk</a>
 </article>
+
+<style>
+
+</style>
