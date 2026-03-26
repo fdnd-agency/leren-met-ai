@@ -11,24 +11,25 @@
     </nav>
 
     <div class="triangles">
-        <svg class="triangle triangle-dark" viewBox="0 0 100 100">
-            <polygon points="0,0 100,50 0,100" />
-          </svg>
 
           <img src={pinkrobot} alt="pink-robot" class="pink-robot" />
+
+          <svg class="triangle triangle-dark" viewBox="0 0 100 100">
+            <polygon points="0,0 100,50 0,100" />
+          </svg>
 
           <svg class="triangle triangle-pink" viewBox="0 0 100 100">
             <polygon points="0,0 100,50 0,100" />
           </svg>
     </div>
 
-    <img src="{lightbulb}" class="light-bulb" alt="Light-bulb-illustrations">
+    <img src={lightbulb} class="light-bulb" alt="Light-bulb-illustrations">
 <section class="hero-images">
 
 <h1> Leren met AI</h1>
    
-<img src="{logo}" class="large-logo" alt="Logo-leren-met-ai">
-<img src="{teachers}" class="teachers" alt="Teachers-illustrations">
+<img src={logo} class="large-logo" alt="Logo-leren-met-ai">
+<img src={teachers} class="teachers" alt="Teachers-illustrations">
 
 </section>
 
@@ -74,6 +75,7 @@ header.hero {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
 }
 
 h1 {
@@ -92,15 +94,22 @@ h1 {
   top: 60px;
   left: 0;
   width: 100px;
+  z-index: 0;
 }
 
 .triangle-dark {
+  position: absolute;
+  top: 30px;
+  left: 0;
   width: 120px;
   z-index: 1;
 }
 
 .triangle-pink {
-    width: 80px;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 60px;
     fill: var(--pink);
     z-index: 1;
 }
@@ -112,17 +121,26 @@ h1 {
 
 .large-logo {
     width: 260px;
-    padding-left: 10px;
+    padding-left: 30px;
+    margin: 0 auto;
+    display: block;
 }
 
 .teachers {
     width: 300px;
+    z-index: 2;
 }
 
 .intro {
     background-color: #28255a;
     color: var(--white);
     text-align: center;
+    transform: translateY(-40px);
+    padding-bottom: 40px;
+}
+
+h2 {
+    padding-top: 60px;
 }
 
 
