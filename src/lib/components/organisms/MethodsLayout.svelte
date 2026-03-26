@@ -10,5 +10,15 @@
 </div>
 
 <style>
+  .methods-grid {
+  --max-width: 78rem;
+  --min-card-width: 18rem;
   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--min-card-width), 100%), 1fr));
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+    width: min(100%, var(--max-width));
+    margin-inline: auto;
+  }
 </style>

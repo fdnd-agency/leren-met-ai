@@ -10,5 +10,7 @@
 </article>
 
 <style>
-
+  .method-card {
+    border: solid 1px black;
+  }
 </style>
