@@ -3,8 +3,12 @@
   export let methods = [];
 </script>
 
-<section>
+<div class="methods-grid">
   {#each methods as method}
     <MethodCard {method} />
   {/each}
-</section>
+</div>
+
+<style>
+  
+</style>
