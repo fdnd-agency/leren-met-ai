@@ -77,6 +77,7 @@ header.hero {
     align-items: center;
     z-index: 2;
     position: relative;
+    transform: translateY(-20px);
 }
 
 h1 {
@@ -127,7 +128,7 @@ h1 {
     width: clamp(220px, 45vw, 320px);
     /* width: 260px; */
     /* padding-left: 30px; */
-    transform: translate(10px);
+    transform: translate(20px);
     margin: 0 auto;
     display: block;
 }
@@ -198,6 +199,29 @@ h1 {
         top: 220px;
         width: clamp(65px, 8vw, 110px);
     }
+
+}
+
+@media (min-width: 1024px) {
+
+
+.pink-robot {
+    width:  clamp(100px, 10vw, 140px);
+    top: 5px;
+    left: 10px;
+}
+
+.light-bulb {
+    width:  clamp(100px, 10vw, 150px);
+}
+
+.triangle-dark {
+    top: 70px;
+}
+
+.triangle-pink {
+    top: 310px;
+}
 
 }
 
