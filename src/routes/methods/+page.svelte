@@ -1,9 +1,13 @@
 <script>
     let { data } = $props()
-  
+
     const { methods } = data
+
+    import Filter from '$lib/components/organism/Filter.svelte';
   
   </script>
+
+  <Filter/>
   
   <h2>AI methoden</h2>
   {#each methods as method}
