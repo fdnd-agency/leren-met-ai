@@ -100,7 +100,7 @@ h1 {
 .triangle-dark {
   position: absolute;
   /* top: 40px; */
-  top: clamp(40px, 5vw, 65px);
+  top: clamp(40px, 5vw, 80px);
   left: 0;
   width: clamp(90px, 16vw, 140px);
   z-index: 1;
@@ -136,6 +136,71 @@ h1 {
     width: clamp(260px, 75vw, 420px);
     z-index: 2;
 }
+
+@media (min-width: 425px) {
+
+    .large-logo {
+        width: clamp(260px, 50vw, 360px);
+
+}
+    .teachers {
+        width:  clamp(300px, 80vw, 500px);
+    }
+    
+    .pink-robot {
+        width:  clamp(85px, 12vw, 115px);
+        top: 0;
+        left: 10px;
+    }
+
+    .light-bulb {
+        width:  clamp(80px, 12vw, 120px);
+    }
+
+    .triangle-dark {
+        width: clamp(120px, 22vw, 180px);
+    }
+
+    .triangle-pink {
+        top: 180px;
+        width: clamp(50px, 8vw, 80px);
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .large-logo {
+        width: clamp(320px, 40vw, 500px);
+
+}
+    .teachers {
+        width:  clamp(420px, 70vw, 800px);
+    }
+    
+    .pink-robot {
+        width:  clamp(100px, 10vw, 140px);
+        top: 5px;
+        left: 10px;
+    }
+
+    .light-bulb {
+        width:  clamp(100px, 10vw, 150px);
+    }
+
+    .triangle-dark {
+        top: 55px;
+        width: clamp(160px, 20vw, 230px);
+        /* width: clamp(120px, 14vw, 200px); */
+    }
+
+    .triangle-pink {
+        top: 220px;
+        width: clamp(65px, 8vw, 110px);
+    }
+
+}
+
 
 .intro {
     background-color: #28255a;
