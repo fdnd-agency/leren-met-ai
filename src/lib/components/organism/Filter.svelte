@@ -1,6 +1,8 @@
 <details>
-  <summary>Filter methodes</summary>
+  <summary>
+    Filter methodes
   <span class="icon">+ </span>
+</summary>
 
   <div class="filter-container">
     <input type="checkbox" id="f1" />
@@ -19,8 +21,52 @@
 
 <style>
 
+details {
+ width: fit-content;
+ border: 1px solid black;
+ padding: 8px 16px;
+}    
+
+details[open] {
+    position: relative;
+}
+
+summary {
+    display: flex;
+    align-items: center;
+}
+
+summary::marker {
+    content: none;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* colors     */
+
+.filter-container {
+  --color-creatief: #4A40FE;
+  --color-onderzoekend: #242062;
+  --color-educatief: #EA77B6;
+  --color-interactief: #18887C;
+  --color-text: white;
+} 
+
+/* filters */
+
 .filter-container input {
   display: none;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .filter-container label {
