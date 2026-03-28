@@ -22,18 +22,22 @@
 <style>
 
 details {
- width: fit-content;
+ /* width: fit-content; */
  border: 1px solid black;
  padding: 8px 16px;
+ border-radius: 10px;
+ margin: 10px;
+ 
 }    
 
-details[open] {
-    position: relative;
+details[open] .icon {
+    transform: rotate(45deg);
 }
 
 summary {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 summary::marker {
