@@ -18,4 +18,22 @@
 </details>
 
 <style>
+
+.filter-container input {
+  display: none;
+}
+
+.filter-container label {
+    background-color: pink;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin: 10px;
+}
+
+.filter-container input:checked + label {
+    background-color: black;
+    color: white;
+
+}
+
 </style>
