@@ -1,4 +1,4 @@
-<details>
+<details open>
   <summary>
     Filter methodes
   <span class="icon">+ </span>
@@ -75,15 +75,41 @@ summary::marker {
 
 .filter-container label {
     background-color: pink;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 8px 16px;
     margin: 10px;
+    text-align: center;
 }
 
 .filter-container input:checked + label {
     background-color: black;
     color: white;
 
+}
+
+@media (min-width: 768px) {
+
+   details {
+     display: block;
+     border: none;
+   }
+
+    summary {
+        display: none;
+    }
+
+    .filter-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .filter-container label {
+        margin: 0;
+    }
 }
 
 </style>
