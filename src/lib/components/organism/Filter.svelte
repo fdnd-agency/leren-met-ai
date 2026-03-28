@@ -1,2 +1,21 @@
+<details>
+  <summary>Filter methodes</summary>
+  <span class="icon">+ </span>
 
-<p> test</p>
+  <div class="filter-container">
+    <input type="checkbox" id="f1" />
+    <label for="f1"> Creatief </label>
+
+    <input type="checkbox" id="f2" />
+    <label for="f2"> Onderzoekend </label>
+
+    <input type="checkbox" id="f3" />
+    <label for="f3"> Educatief </label>
+
+    <input type="checkbox" id="f4" />
+    <label for="f4"> Interactief </label>
+  </div>
+</details>
+
+<style>
+</style>
