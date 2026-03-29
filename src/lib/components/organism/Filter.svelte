@@ -74,7 +74,7 @@ summary::marker {
 }
 
 .filter-container label {
-    background-color: pink;
+    border: 1px solid black;
     border-radius: 10px;
     padding: 8px 16px;
     margin: 10px;
