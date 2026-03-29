@@ -67,7 +67,7 @@
     position: relative;
     width: 100%;
     max-width: 1200px;
-    padding: 0 1rem;
+    padding: 0.5rem;
     /* margin: 0 auto; */
   }
 
@@ -79,7 +79,7 @@
     overflow-y: hidden;
     gap: 10px;
     margin: 0;
-    padding: 0;
+    padding: 0 1rem 0 0;
     list-style: none;
   }
 
@@ -91,6 +91,24 @@
     list-style: none;
     border-radius: 10px;
     padding: 1rem;
+  }
+
+  .card:last-child {
+       margin-right: 1em;
+    }
+
+  @media (min-width: 1000px) {
+    .carousel-container{
+        max-width: 1250px;
+    }
+
+    .carousel {
+        padding-right: 0 ;
+    }
+
+    .card:last-child {
+       margin-right: 0;
+    }
   }
 
 
@@ -113,7 +131,6 @@
     border-radius: 20px;
     border: 1px solid black;
     padding: 8px 16px;
-    margin-bottom: 1rem;
   }
 
 
