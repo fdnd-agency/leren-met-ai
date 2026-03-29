@@ -1,84 +1,108 @@
-
-
 <section class="carousel-container">
+  <button class="prev"> </button>
 
-    <button class="prev">
-    </button>
-
-<ul class="carousel">
+  <ul class="carousel">
     <li class="card">
-        <h3>Beeld Audio</h3>
-        <p>Maakt afbeeldingen en ontwerpen op basis van tekst</p>
-    <div class="labels">
+      <h3>Beeld Audio</h3>
+      <p>Visuele generatie</p>
+      <p>Maakt afbeeldingen en ontwerpen op basis van tekst</p>
+      <div class="labels">
         <a href="/">label</a>
         <a href="/">label</a>
-    </div>
-</li>
-
-    <li class="card">
-        <h3>Beeld Audio</h3>
-        <p>Maakt afbeeldingen en ontwerpen op basis van tekst</p>
-    <div class="labels">
-        <a href="/">label</a>
-        <a href="/">label</a>
-    </div>
-</li>
+      </div>
+    </li>
 
     <li class="card">
-        <h3>Beeld Audio</h3>
-        <p>Maakt afbeeldingen en ontwerpen op basis van tekst</p>
-    <div class="labels">
+      <h3>Beeld Audio</h3>
+      <p>Visuele generatie</p>
+      <p>Maakt afbeeldingen en ontwerpen op basis van tekst</p>
+      <div class="labels">
         <a href="/">label</a>
         <a href="/">label</a>
-    </div>
+      </div>
+    </li>
 
     <li class="card">
-        <h3>Beeld Audio</h3>
-        <p>Maakt afbeeldingen en ontwerpen op basis van tekst</p>
-    <div class="labels">
+      <h3>Beeld Audio</h3>
+      <p>Visuele generatie</p>
+      <p>Maakt afbeeldingen en ontwerpen op basis van tekst</p>
+      <div class="labels">
         <a href="/">label</a>
         <a href="/">label</a>
-    </div>
+      </div>
+    </li>
 
     <li class="card">
-        <h3>Beeld Audio</h3>
-        <p>Maakt afbeeldingen en ontwerpen op basis van tekst</p>
-    <div class="labels">
+      <h3>Beeld Audio</h3>
+      <p>Visuele generatie</p>
+      <p>Maakt afbeeldingen en ontwerpen op basis van tekst</p>
+      <div class="labels">
         <a href="/">label</a>
         <a href="/">label</a>
-    </div>
+      </div>
+    </li>
 
-</ul>
+    <li class="card">
+      <h3>Beeld Audio</h3>
+      <p>Visuele generatie</p>
+      <p>Maakt afbeeldingen en ontwerpen op basis van tekst</p>
+      <div class="labels">
+        <a href="/">label</a>
+        <a href="/">label</a>
+      </div>
+    </li>
+  </ul>
 
-
-    <button class="next">
-        
-    </button>
-
-
+  <button class="next"> </button>
 </section>
 
 <style>
-
-
-.carousel-container {
+  .carousel-container {
     position: relative;
-    width: 400px;
-}
+    width: 100%;
+    max-width: 400px;
+  }
 
-.carousel {
+  .carousel {
     display: flex;
     scroll-snap-type: x mandatory;
-    overflow-x:auto;
-    width: 300px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    overflow-y: hidden;
     gap: 10px;
-}
+  }
 
-.card {
-    width: 300px;
+  .card {
+    flex: 0 0 300px;
+    height: 250px;
+    scroll-snap-align: start;
     border: 1px solid black;
     text-decoration: none;
-}
- 
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .card h3 + p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .card p {
+    margin-bottom: 1rem;
+  }
+
+  .labels {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .labels a {
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 8px 16px;
+    margin-bottom: 1rem;
+  }
+
 
 </style>
