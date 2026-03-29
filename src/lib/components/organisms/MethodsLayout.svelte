@@ -20,5 +20,12 @@
     padding: var(--space-lg);
     width: min(100%, var(--max-width));
     margin-inline: auto;
+    container-type: inline-size;
+  }
+
+  @container (min-width: 40rem) {
+    :global(.method-card) {
+      aspect-ratio: 1 / 1;
+    }
   }
 </style>
