@@ -23,8 +23,36 @@
     min-width: 0;
     padding: var(--space-md);
     /* appearance */
-    border: solid 1px black;
-    border-radius: 1em;
+    background-color: var(--card-bg);
+    color: white;
+    border: solid 5px var(--card-accent);
+    border-radius: 1.5em;
+  }
+
+  /* ----------- Card Dummy colors -------------- */
+    .method-card:nth-child(5n + 1) {
+    --card-bg: #2b2460;
+    --card-accent: #5b4bff;
+  }
+
+  .method-card:nth-child(5n + 2) {
+    --card-bg: #e84c72;
+    --card-accent: #ff7fa1;
+  }
+
+  .method-card:nth-child(5n + 3) {
+    --card-bg: #4338ca;
+    --card-accent: #8c83ff;
+  }
+
+  .method-card:nth-child(5n + 4) {
+    --card-bg: #0f766e;
+    --card-accent: #2dd4bf;
+  }
+
+  .method-card:nth-child(5n + 5) {
+    --card-bg: #d778b2;
+    --card-accent: #ff9ed2;
   }
 
   /* ----------- Card content styling --------------*/
