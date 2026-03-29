@@ -27,6 +27,9 @@
     color: white;
     border: solid 5px var(--card-accent);
     border-radius: 1.5em;
+    outline: 0.25rem dashed rgb(255 255 255 / 0.25);
+    outline-offset: -0.7rem;
+    box-shadow: 10px 10px 0 rgb(0 0 0 / 0.22), 18px 18px 30px rgb(0 0 0 / 0.18);
   }
 
   /* ----------- Card Dummy colors -------------- */
