@@ -33,17 +33,23 @@
 
 </section>
 
-<section class="intro">
+</header>
 
-    <h2 class="intro-title">Welkom bij Leren met AI</h2>
+<section class="intro">
+    <h2 class="intro-title">AI in de klas. Hoe pak je dat aan?</h2>
+
     <p>
-      Ontdek de wereld van kunstmatige intelligentie en robotica. Hier vind je
-      inspiratie en methodes om AI in je les toe te passen.
+      Op <span>‘AI de Hoe’s’</span> vind je praktische werkvormen van collega-docenten
+      die je direct kunt gebruiken. Concrete voorbeelden uit de onderwijspraktijk,
+      door en voor docenten.
+    </p>
+  
+    <p>
+      Laat je inspireren, pas aan wat bij jou past, en voeg jouw eigen werkvormen toe.
+      Want jouw aanpak is waardevol voor anderen.
     </p>
 
 </section>
-
-</header>
 
 <style>
 
@@ -57,7 +63,6 @@
 header.hero {
     position: relative;
     background: var(--purple);
-    min-height: 100vh;
 }    
 
 .hero-nav {
