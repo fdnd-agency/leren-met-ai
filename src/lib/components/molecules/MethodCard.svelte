@@ -30,7 +30,9 @@
     outline: 0.25rem dashed rgb(255 255 255 / 0.25);
     outline-offset: -0.7rem;
     box-shadow: 10px 10px 0 rgb(0 0 0 / 0.22), 18px 18px 30px rgb(0 0 0 / 0.18);
+    /* interaction */
     transform: rotate(var(--card-tilt));
+    transition: transform 0.28s ease, box-shadow 0.28s ease, filter 0.28s ease;
   }
 
   /* ----------- Card Dummy colors -------------- */
@@ -93,5 +95,12 @@
     display: inline-flex;
     align-items: center;
     min-height: 2.5rem;
+  }
+
+  /* ----------- Card interactions --------------*/
+  .method-card:hover,
+  .method-card:focus-within {
+    transform: translateY(-0.5rem) rotate(0deg) scale(1.02);
+    box-shadow: 14px 14px 0 rgb(0 0 0 / 0.22), 28px 28px 38px rgb(0 0 0 / 0.22);
   }
 </style>
