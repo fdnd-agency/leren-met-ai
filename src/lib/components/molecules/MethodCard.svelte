@@ -13,7 +13,6 @@
 
 <style>
   /* ----------- Card styling -------------- */
-
   .method-card {
     /* layout */
     display: grid;
@@ -67,7 +66,6 @@
   }
 
   /* ----------- Card content styling --------------*/
-
   h3, p {
   margin: 0;
   /* text behaviour */
@@ -95,6 +93,26 @@
     display: inline-flex;
     align-items: center;
     min-height: 2.5rem;
+  }
+
+  /* ----------- Button styling --------------*/
+  .method-card-footer > a {
+    padding-inline: 1em;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 0.6em;
+    color: white;
+    gap: 0.3rem;
+    transition: transform 0.2s ease;
+  }
+
+  /* ----------- Dummy filter label --------------*/
+  .method-card-footer > span {
+    padding-inline: 0.8em;
+    border-radius: 0.6em;
+    background: rgba(6, 6, 6, 0.237);
+    color: white;
+    font-size: 1rem;
+    font-weight: var(--bold-weight);
   }
 
   /* ----------- Card interactions --------------*/
