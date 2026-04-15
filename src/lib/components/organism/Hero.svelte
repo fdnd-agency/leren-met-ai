@@ -60,10 +60,21 @@
   --white: #fff;
 }    
 
-header.hero {
+.hero {
     position: relative;
     background: var(--purple);
-}    
+}   
+
+.hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: var(--dark-purple);
+    z-index: 1;
+}
 
 .hero-nav {
    display: flex;
@@ -82,12 +93,22 @@ header.hero {
     align-items: center;
     z-index: 2;
     position: relative;
-    transform: translateY(-20px);
 }
 
 h1 {
     visibility: hidden;
 }
+
+.intro {
+    background-color:var(--dark-purple);
+    color: var(--white);
+    text-align: center;
+}
+
+h2 {
+    padding-top: 10px;
+}
+
 
 .light-bulb {
     position: absolute;
@@ -228,19 +249,6 @@ h1 {
     top: 310px;
 }
 
-}
-
-
-.intro {
-    background-color: #28255a;
-    color: var(--white);
-    text-align: center;
-    transform: translateY(-40px);
-    padding-bottom: 40px;
-}
-
-h2 {
-    padding-top: 60px;
 }
 
 
