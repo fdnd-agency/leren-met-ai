@@ -6,6 +6,9 @@
 </script>
 
 <header class="hero">
+
+    <h1> Leren met AI</h1>
+
     <nav class="hero-nav">
         <a href="/methods" class="methods-link">Methodes</a>
     </nav>
@@ -25,8 +28,6 @@
 
     <img src={lightbulb} class="light-bulb" alt="Light-bulb-illustrations">
 <section class="hero-images">
-
-<h1> Leren met AI</h1>
    
 <img src={logo} class="large-logo" alt="Logo-leren-met-ai">
 <img src={teachers} class="teachers" alt="Teachers-illustrations">
@@ -96,7 +97,12 @@
 }
 
 h1 {
-    visibility: hidden;
+    position: absolute;
+    left: -1000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow:hidden;
 }
 
 .intro {
