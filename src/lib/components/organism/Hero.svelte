@@ -81,6 +81,7 @@
     width: clamp(50px, 6vw, 60px);
     height: auto;
     margin: 10px;
+    opacity:0;
   }
 
   .methods-link {
@@ -135,15 +136,15 @@
     /* top: 40px; */
     top: clamp(40px, 5vw, 80px);
     left: 0;
-    width: clamp(90px, 16vw, 140px);
+    width: clamp(70px, 14vw, 120px);
     z-index: 1;
   }
 
   .triangle-pink {
     position: absolute;
-    top: clamp(140px, 25vw, 220px);
+    top: clamp(110px, 18vw, 170px);
     left: 0;
-    width: clamp(40px, 8vw, 70px);
+    width: clamp(30px, 6vw, 55px);
     fill: var(--pink);
     z-index: 1;
   }
