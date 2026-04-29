@@ -27,12 +27,12 @@
     </div>
 
     <img src={lightbulb} class="light-bulb" alt="Light-bulb-illustrations">
-<section class="hero-images">
+<div class="hero-images">
    
 <img src={logo} class="large-logo" alt="Logo-leren-met-ai">
 <img src={teachers} class="teachers" alt="Teachers-illustrations">
 
-</section>
+</div>
 
 </header>
 
