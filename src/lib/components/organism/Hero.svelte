@@ -108,14 +108,24 @@
   }
 
   .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 1rem; */
     background-color: var(--dark-purple);
     color: var(--white);
     text-align: center;
+    padding: 2rem 1.5rem 4rem;
   }
 
-  h2 {
-    padding-top: 10px;
+  .intro-title, 
+  .intro p {
+   width: 100%;
+   max-width: 700px;
+   text-align: left;
+   margin-bottom: 1rem;
   }
+
 
   .light-bulb {
     position: absolute;
