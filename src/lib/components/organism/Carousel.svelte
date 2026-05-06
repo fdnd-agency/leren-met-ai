@@ -2,7 +2,7 @@
   <button class="prev"> </button>
 
   <ul class="carousel">
-    <li class="card">
+    <li class="card is-hidden-left">
       <h3>Beeld Audio</h3>
       <p class="subtitle">Visuele generatie</p>
       <p class="description">Maakt afbeeldingen en ontwerpen op basis van tekst</p>
@@ -12,7 +12,7 @@
       </div>
     </li>
 
-    <li class="card">
+    <li class="card is-prev">
         <h3>Beeld Audio</h3>
         <p class="subtitle">Visuele generatie</p>
         <p class="description">Maakt afbeeldingen en ontwerpen op basis van tekst</p>
@@ -22,7 +22,7 @@
         </div>
       </li>
 
-      <li class="card">
+      <li class="card is-active">
         <h3>Beeld Audio</h3>
         <p class="subtitle">Visuele generatie</p>
         <p class="description">Maakt afbeeldingen en ontwerpen op basis van tekst</p>
@@ -32,7 +32,7 @@
         </div>
       </li>
 
-      <li class="card">
+      <li class="card is-next">
         <h3>Beeld Audio</h3>
         <p class="subtitle">Visuele generatie</p>
         <p class="description">Maakt afbeeldingen en ontwerpen op basis van tekst</p>
@@ -42,7 +42,7 @@
         </div>
       </li>
 
-      <li class="card">
+      <li class="card is-hidden-right">
         <h3>Beeld Audio</h3>
         <p class="subtitle">Visuele generatie</p>
         <p class="description">Maakt afbeeldingen en ontwerpen op basis van tekst</p>
@@ -84,12 +84,43 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    min-height: 250px;
+    width: 220px;
+    min-height: 320px;
     border: 1px solid black;
     border-radius: 10px;
     padding: 1rem;
-    transform: translate(-50%, -50% );
+    transform: translate(-50%, -50%);
   }
+
+  .card.is-prev {
+    opacity: 1;
+    transform: translate(-140%, -50%);
+    z-index: 3;
+  }
+
+  .card.is-active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 4;
+  }
+
+  .card.is-next {
+    opacity: 1;
+    transform: translate(40%, -50%);
+    z-index: 3;
+  }
+
+  .card.is-hidden-left {
+    opacity: 0;
+    transform: translate(-200%, -50%);
+  }
+
+  .card.is-hidden-right {
+    opacity: 0;
+    transform: translate(100%, -50%);
+  }
+
+
 
   /* .card:last-child {
        margin-right: 1em;
