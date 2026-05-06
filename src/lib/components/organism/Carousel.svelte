@@ -68,32 +68,30 @@
     width: 100%;
     max-width: 1200px;
     padding: 0.5rem;
-    /* margin: 0 auto; */
+    margin: 0 auto;
+    overflow: hidden;
   }
 
   .carousel {
-    display: flex;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    overflow-x: auto;
-    overflow-y: hidden;
-    gap: 10px;
+    position: relative;
+    min-height: 400px;
     margin: 0;
-    padding: 0 1rem 0 0;
+    padding: 0;
     list-style: none;
   }
 
   .card {
-    flex: 0 0 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     min-height: 250px;
-    scroll-snap-align: start;
     border: 1px solid black;
-    list-style: none;
     border-radius: 10px;
     padding: 1rem;
+    transform: translate(-50%, -50% );
   }
 
-  .card:last-child {
+  /* .card:last-child {
        margin-right: 1em;
     }
 
@@ -109,7 +107,7 @@
     .card:last-child {
        margin-right: 0;
     }
-  }
+  } */
 
 
   .card h3 + p {
