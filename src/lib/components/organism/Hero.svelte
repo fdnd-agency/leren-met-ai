@@ -258,4 +258,22 @@
       top: 310px;
     }
   }
+
+  @media (min-width: 1200px) {
+    .intro {
+     padding: 4em 6em 6em ;
+    }
+
+    .intro-title, 
+    .intro p {
+      max-width: 1100px;
+      margin-right: auto;
+      margin-left: auto;
+      line-height: 1.6;
+    }
+
+  }
+
+
+
 </style>
