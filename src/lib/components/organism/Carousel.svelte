@@ -1,112 +1,70 @@
 <script>
+  // Temporary dummy data
+  // Later this will be fetched from directus
 
-// Temporary dummy data
-// Later this will be fetched from directus
+  const cards = [
+    {
+      title: "Beeld AI",
+      subtitle: "Visuele generatie",
+      description: "Maakt afbeeldingen en ontwerpen op basis van tekst",
+      labels: ["DALL·E", "Firefly"],
+    },
 
-const cards = [
-  {
-    title: 'Beeld AI',
-    subtitle: 'Visuele generatie',
-    description: 'Maakt afbeeldingen en ontwerpen op basis van tekst',
-    labels: ['DALL·E', 'Firefly']
-  },
+    {
+      title: "Tekst AI",
+      subtitle: "Tekst generatie",
+      description: "Helpt met schrijven en samenvatten",
+      labels: ["ChatGPT", "Claude"],
+    },
 
-  {
-    title: 'Tekst AI',
-    subtitle: 'Tekst generatie',
-    description: 'Helpt met schrijven en samenvatten',
-    labels: ['ChatGPT', 'Claude']
-  },
+    {
+      title: "Audio AI",
+      subtitle: "Audio generatie",
+      description: "Genereert spraak en geluid op basis van input",
+      labels: ["Suno", "ElevenLabs"],
+    },
 
-  {
-    title: 'Audio AI',
-    subtitle: 'Audio generatie',
-    description: 'Genereert spraak en geluid op basis van input',
-    labels: ['Suno', 'ElevenLabs']
-  },
+    {
+      title: "Video AI",
+      subtitle: "Video generatie",
+      description: "Maakt of bewerkt video’s met AI",
+      labels: ["Runway", "Pika"],
+    },
 
-  {
-    title: 'Video AI',
-    subtitle: 'Video generatie',
-    description: 'Maakt of bewerkt video’s met AI',
-    labels: ['Runway', 'Pika']
-  },
-
-  {
-    title: 'Code AI',
-    subtitle: 'Code assistentie',
-    description: 'Ondersteunt bij programmeren en debuggen',
-    labels: ['Copilot', 'Cursor']
-  }
-];
-
+    {
+      title: "Code AI",
+      subtitle: "Code assistentie",
+      description: "Ondersteunt bij programmeren en debuggen",
+      labels: ["Copilot", "Cursor"],
+    },
+  ];
 </script>
-
 
 <section class="carousel-container">
   <button class="prev"> </button>
 
   <ul class="carousel">
-    <li class="card is-hidden-left">
-      <h3>Beeld Audio</h3>
-      <p class="subtitle">Visuele generatie</p>
-      <p class="description">Maakt afbeeldingen en ontwerpen op basis van tekst</p>
-      <div class="labels">
-        <a href="/">label</a>
-        <a href="/">label</a>
-      </div>
-    </li>
-
-    <li class="card is-prev">
-        <h3>Beeld Audio</h3>
-        <p class="subtitle">Visuele generatie</p>
-        <p class="description">Maakt afbeeldingen en ontwerpen op basis van tekst</p>
+    {#each cards as card}
+      <li class="card">
+        <h3>{card.title}</h3>
+        <p class="subtitle">{card.subtitle}</p>
+        <p class="description">{card.description}</p>
         <div class="labels">
-          <a href="/">label</a>
-          <a href="/">label</a>
+          {#each card.labels as label}
+            <a href="/">{label}</a>
+          {/each}
         </div>
       </li>
-
-      <li class="card is-active">
-        <h3>Beeld Audio</h3>
-        <p class="subtitle">Visuele generatie</p>
-        <p class="description">Maakt afbeeldingen en ontwerpen op basis van tekst</p>
-        <div class="labels">
-          <a href="/">label</a>
-          <a href="/">label</a>
-        </div>
-      </li>
-
-      <li class="card is-next">
-        <h3>Beeld Audio</h3>
-        <p class="subtitle">Visuele generatie</p>
-        <p class="description">Maakt afbeeldingen en ontwerpen op basis van tekst</p>
-        <div class="labels">
-          <a href="/">label</a>
-          <a href="/">label</a>
-        </div>
-      </li>
-
-      <li class="card is-hidden-right">
-        <h3>Beeld Audio</h3>
-        <p class="subtitle">Visuele generatie</p>
-        <p class="description">Maakt afbeeldingen en ontwerpen op basis van tekst</p>
-        <div class="labels">
-          <a href="/">label</a>
-          <a href="/">label</a>
-        </div>
-      </li>
+    {/each}
   </ul>
 
   <button class="next"></button>
 </section>
 
 <style>
+  /* colors */
 
-/* colors */
-
-
-/* carousel */
+  /* carousel */
 
   .carousel-container {
     position: relative;
@@ -126,15 +84,15 @@ const cards = [
   }
 
   .card {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%; */
     width: 220px;
     min-height: 320px;
     border: 1px solid black;
     border-radius: 10px;
     padding: 1rem;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
   }
 
   .card.is-prev {
@@ -165,8 +123,6 @@ const cards = [
     transform: translate(100%, -50%);
   }
 
-
-
   /* .card:last-child {
        margin-right: 1em;
     }
@@ -184,7 +140,6 @@ const cards = [
        margin-right: 0;
     }
   } */
-
 
   .card h3 + p {
     margin-top: 0;
@@ -206,6 +161,4 @@ const cards = [
     border: 1px solid black;
     padding: 8px 16px;
   }
-
-
 </style>
