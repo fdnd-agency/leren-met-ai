@@ -1,3 +1,48 @@
+<script>
+
+// Temporary dummy data
+// Later this will be fetched from directus
+
+const cards = [
+  {
+    title: 'Beeld AI',
+    subtitle: 'Visuele generatie',
+    description: 'Maakt afbeeldingen en ontwerpen op basis van tekst',
+    labels: ['DALL·E', 'Firefly']
+  },
+
+  {
+    title: 'Tekst AI',
+    subtitle: 'Tekst generatie',
+    description: 'Helpt met schrijven en samenvatten',
+    labels: ['ChatGPT', 'Claude']
+  },
+
+  {
+    title: 'Audio AI',
+    subtitle: 'Audio generatie',
+    description: 'Genereert spraak en geluid op basis van input',
+    labels: ['Suno', 'ElevenLabs']
+  },
+
+  {
+    title: 'Video AI',
+    subtitle: 'Video generatie',
+    description: 'Maakt of bewerkt video’s met AI',
+    labels: ['Runway', 'Pika']
+  },
+
+  {
+    title: 'Code AI',
+    subtitle: 'Code assistentie',
+    description: 'Ondersteunt bij programmeren en debuggen',
+    labels: ['Copilot', 'Cursor']
+  }
+];
+
+</script>
+
+
 <section class="carousel-container">
   <button class="prev"> </button>
 
