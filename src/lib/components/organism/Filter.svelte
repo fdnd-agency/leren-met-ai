@@ -1,8 +1,11 @@
 <script>
 
+import { onMount } from 'svelte';
+
 let methods = [];
 
 const fetchData = async () =>{
+  console.log('fetch')
   const res = await fetch (
     'https://fdnd-agency.directus.app/items/leren_met_ai_methodes'
   );
@@ -10,9 +13,23 @@ const fetchData = async () =>{
   const data = await res.json();
 
   console.log(data);
-}
+
+  methods = data.data || [];
+  console.log(methods);
+};
+
+onMount(() => {
+  fetchData();
+});
+
 
 </script>
+
+{#each methods as method}
+
+<h3>{method.title}</h3>
+
+{/each}
 
 <details open>
   <summary>
