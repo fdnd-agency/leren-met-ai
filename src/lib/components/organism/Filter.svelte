@@ -24,12 +24,13 @@ onMount(() => {
 });
 
 const getCategory = (method) => {
+  // return 'test';
   const text =`
-  ${method.title}
-  ${method.description}
+  ${method.title || ''}
+  ${method.description || ''}
   `.toLowerCase();
 
-  if (text.includes(brainstorm)) {
+  if (text.includes('brainstorm')) {
     return 'creatief';
   }
 
@@ -40,9 +41,15 @@ const getCategory = (method) => {
   if (text.includes('onderzoek')) {
     return 'onderzoekend';
   }
-
-
+  
+  return 'overig';
 }
+
+$: filteredMethods =
+  activeCategory === 'all'
+    ? methods
+    : methods.filter((method) => getCategory(method) === activeCategory);
+
 
 </script>
 
@@ -62,15 +69,17 @@ const getCategory = (method) => {
     <input type="checkbox" id="educatief" name="filter" checked={activeCategory === 'edcuatief'} on:click={()=> activeCategory = 'educatief' } />
     <label for="educatief"> Educatief </label>
 
-    <input type="checkbox" id="interactief" name="filter" checked={activeCategory === 'interactief'} on:click={()=> activeCategory = 'creatief' }/>
+    <input type="checkbox" id="interactief" name="filter" checked={activeCategory === 'interactief'} on:click={()=> activeCategory = 'interactief' }/>
     <label for="interactief"> Interactief </label>
   </div>
 </details>
 
   <h2>AI methoden</h2>
-  {#each methods as method}
+
+  {#each filteredMethods as method}
     <article>
       <h3>{method.title}</h3>
+      <p>{getCategory(method)}</p>
       <p>{method.description}</p>
       <a href="/methods/{method.slug}">Bekijk {method.title}</a>
     </article>
