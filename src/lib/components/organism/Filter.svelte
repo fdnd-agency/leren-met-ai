@@ -3,6 +3,7 @@
 import { onMount } from 'svelte';
 
 let methods = [];
+let activeCategory = 'all';
 
 const fetchData = async () =>{
   console.log('fetch')
@@ -32,17 +33,17 @@ onMount(() => {
 </summary>
 
   <div class="filter-container">
-    <input type="checkbox" id="f1" />
-    <label for="f1"> Creatief </label>
+    <input type="checkbox" id="creatief" name="filter" checked={activeCategory === 'creatief'} />
+    <label for="creatief"> Creatief </label>
 
-    <input type="checkbox" id="f2" />
-    <label for="f2"> Onderzoekend </label>
+    <input type="checkbox" id="onderzoekend" name="filter" checked={activeCategory === 'onderzoekend'} />
+    <label for="onderzoekend"> Onderzoekend </label>
 
-    <input type="checkbox" id="f3" />
-    <label for="f3"> Educatief </label>
+    <input type="checkbox" id="educatief" name="filter" checked={activeCategory === 'edcuatief'} />
+    <label for="educatief"> Educatief </label>
 
-    <input type="checkbox" id="f4" />
-    <label for="f4"> Interactief </label>
+    <input type="checkbox" id="interactief" name="filter" checked={activeCategory === 'interactief'}/>
+    <label for="interactief"> Interactief </label>
   </div>
 </details>
 
