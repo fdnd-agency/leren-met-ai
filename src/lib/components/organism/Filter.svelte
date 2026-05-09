@@ -33,16 +33,16 @@ onMount(() => {
 </summary>
 
   <div class="filter-container">
-    <input type="checkbox" id="creatief" name="filter" checked={activeCategory === 'creatief'} />
+    <input type="checkbox" id="creatief" name="filter" checked={activeCategory === 'creatief'} on:click={()=> activeCategory = 'creatief' } />
     <label for="creatief"> Creatief </label>
 
-    <input type="checkbox" id="onderzoekend" name="filter" checked={activeCategory === 'onderzoekend'} />
+    <input type="checkbox" id="onderzoekend" name="filter" checked={activeCategory === 'onderzoekend'} on:click={()=> activeCategory = 'onderzoekend' }/>
     <label for="onderzoekend"> Onderzoekend </label>
 
-    <input type="checkbox" id="educatief" name="filter" checked={activeCategory === 'edcuatief'} />
+    <input type="checkbox" id="educatief" name="filter" checked={activeCategory === 'edcuatief'} on:click={()=> activeCategory = 'educatief' } />
     <label for="educatief"> Educatief </label>
 
-    <input type="checkbox" id="interactief" name="filter" checked={activeCategory === 'interactief'}/>
+    <input type="checkbox" id="interactief" name="filter" checked={activeCategory === 'interactief'} on:click={()=> activeCategory = 'creatief' }/>
     <label for="interactief"> Interactief </label>
   </div>
 </details>
