@@ -32,6 +32,16 @@ const getCategory = (method) => {
   if (text.includes(brainstorm)) {
     return 'creatief';
   }
+
+  if (text.includes('quiz')) {
+    return 'interactief';
+  }
+
+  if (text.includes('onderzoek')) {
+    return 'onderzoekend';
+  }
+
+
 }
 
 </script>
