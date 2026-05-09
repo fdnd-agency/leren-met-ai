@@ -30,16 +30,39 @@ const getCategory = (method) => {
   ${method.description || ''}
   `.toLowerCase();
 
-  if (text.includes('brainstorm')) {
+  if (
+    text.includes('brainstorm')||
+    text.includes('idee')||
+    text.includes('concept')||
+    text.includes('visual')
+    ) {
     return 'creatief';
   }
 
-  if (text.includes('quiz')) {
-    return 'interactief';
+  if (
+    text.includes('onderzoek')||
+    text.includes('analyse')||
+    text.includes('bronnen')
+    ) {
+    return 'onderzoekend';
   }
 
-  if (text.includes('onderzoek')) {
-    return 'onderzoekend';
+  if (
+    text.includes('les')||
+    text.includes('leren')||
+    text.includes('uitleg')||
+    text.includes('planning')
+    ) {
+    return 'educatief';
+  }
+
+  if (
+    text.includes('quiz')||
+    text.includes('spel')||
+    text.includes('simulatie')||
+    text.includes('rollenspel')
+    ) {
+    return 'interactief';
   }
   
   return 'overig';
