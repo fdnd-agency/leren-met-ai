@@ -28,30 +28,38 @@ const getCategory = (method) => {
   const text =`
   ${method.title || ''}
   ${method.description || ''}
+  ${method.application || ''}
+  ${method.advantages || ''}
+  ${method.methods || ''}
   `.toLowerCase();
 
   if (
     text.includes('brainstorm')||
     text.includes('idee')||
     text.includes('concept')||
-    text.includes('visual')
+    text.includes('visual')||
+    text.includes('beeld')||
+    text.includes('prompt')
     ) {
     return 'creatief';
   }
 
   if (
     text.includes('onderzoek')||
-    text.includes('analyse')||
-    text.includes('bronnen')
+    text.includes('bronnen')||
+    text.includes('zoekopdracht')
     ) {
     return 'onderzoekend';
   }
 
   if (
-    text.includes('les')||
     text.includes('leren')||
+    text.includes('les')||
     text.includes('uitleg')||
-    text.includes('planning')
+    text.includes('planning')||
+    text.includes('leerdoelen')||
+    text.includes('project')||
+    text.includes('deadline')
     ) {
     return 'educatief';
   }
@@ -59,6 +67,7 @@ const getCategory = (method) => {
   if (
     text.includes('quiz')||
     text.includes('spel')||
+    text.includes('spelvorm')||
     text.includes('simulatie')||
     text.includes('rollenspel')
     ) {
