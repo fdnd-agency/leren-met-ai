@@ -1,3 +1,19 @@
+<script>
+
+let methods = [];
+
+const fetchData = async () =>{
+  const res = await fetch (
+    'https://fdnd-agency.directus.app/items/leren_met_ai_methodes'
+  );
+
+  const data = await res.json();
+
+  console.log(data);
+}
+
+</script>
+
 <details open>
   <summary>
     Filter methodes
