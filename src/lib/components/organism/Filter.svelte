@@ -23,6 +23,16 @@ onMount(() => {
   fetchData();
 });
 
+const getCategory = (method) => {
+  const text =`
+  ${method.title}
+  ${method.description}
+  `.toLowerCase();
+
+  if (text.includes(brainstorm)) {
+    return 'creatief';
+  }
+}
 
 </script>
 
