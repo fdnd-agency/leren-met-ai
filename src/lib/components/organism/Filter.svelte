@@ -25,12 +25,6 @@ onMount(() => {
 
 </script>
 
-{#each methods as method}
-
-<h3>{method.title}</h3>
-
-{/each}
-
 <details open>
   <summary>
     Filter methodes
@@ -52,6 +46,14 @@ onMount(() => {
   </div>
 </details>
 
+  <h2>AI methoden</h2>
+  {#each methods as method}
+    <article>
+      <h3>{method.title}</h3>
+      <p>{method.description}</p>
+      <a href="/methods/{method.slug}">Bekijk {method.title}</a>
+    </article>
+  {/each}   
 <style>
 
 details {
