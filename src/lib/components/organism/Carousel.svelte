@@ -41,14 +41,27 @@
 
   let activeIndex =$state(2);
   console.log("active index", activeIndex);
+
+  function getCardState(index) {
+    console.log("card index", index);
+
+  if (index === activeIndex) {
+    return "is-active";
+  }
+
+  return "";
+}
+
+
+
 </script>
 
 <section class="carousel-container">
   <button class="prev"> </button>
 
   <ul class="carousel">
-    {#each cards as card}
-      <li class="card">
+    {#each cards as card, index}
+      <li class={`card ${getCardState(index)}`}>
         <h3>{card.title}</h3>
         <p class="subtitle">{card.subtitle}</p>
         <p class="description">{card.description}</p>
