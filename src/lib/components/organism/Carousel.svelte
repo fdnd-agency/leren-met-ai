@@ -40,13 +40,24 @@
   ];
 
   let activeIndex =$state(2);
-  console.log("active index", activeIndex);
+  // console.log("active index", activeIndex);
 
   function getCardState(index) {
-    console.log("card index", index);
+    // console.log("card index", index);
 
   if (index === activeIndex) {
+    console.log("active")
     return "is-active";
+  }
+
+  if (index === activeIndex - 1){
+    console.log("prev")
+    return "is-prev";
+  }
+
+  if (index === activeIndex + 1){
+    console.log("next")
+    return "is-next";
   }
 
   return "";
