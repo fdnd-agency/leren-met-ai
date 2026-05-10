@@ -45,42 +45,45 @@
   function getCardState(index) {
     // console.log("card index", index);
 
+   const prevIndex =
+  (activeIndex - 1 + cards.length)
+  % cards.length;
+  console.log("prev", prevIndex);
+
+
+  const nextIndex =
+  (activeIndex + 1)
+  % cards.length;
+  console.log("next", nextIndex);
+  
+
   if (index === activeIndex) {
     // console.log("active")
     return "is-active";
   }
 
-  if (index === activeIndex - 1){
+  if (index === prevIndex){
     // console.log("prev")
     return "is-prev";
   }
 
-  if (index === activeIndex + 1){
+  if (index === nextIndex){
     // console.log("next")
     return "is-next";
   }
 
-  if (index < activeIndex) {
-    // console.log("hidden left")
-    return "is-hidden-left";
-  }
   // console.log("hidden right")
     return "is-hidden-right";
   }
 
-function next() {
-  activeIndex=
-  (activeIndex + 1 ) % cards.length;
-  console.log("next index", activeIndex);
-}
+  function next(){
+    activeIndex =(activeIndex +1) % cards.length;
+  }
 
-function prev() {
-  activeIndex=
-  (activeIndex - 1 + cards.length)
-  % cards.length;
-  console.log("prev index", activeIndex);
-}
-
+  function prev(){
+    activeIndex =
+    (activeIndex -1 + cards.length) % cards.length;
+  }
 
 </script>
 
