@@ -134,7 +134,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 220px;
+    width: 270px;
     min-height: 320px;
     border: 1px solid black;
     border-radius: 10px;
@@ -144,7 +144,7 @@
 
   .card.is-prev {
     opacity: 1;
-    transform: translate(-140%, -50%);
+    transform: translate(-160%, -50%) scale(0.9);
     z-index: 3;
   }
 
@@ -156,7 +156,7 @@
 
   .card.is-next {
     opacity: 1;
-    transform: translate(40%, -50%);
+    transform: translate(60%, -50%)scale(0.9);
     z-index: 3;
   }
 
@@ -199,6 +199,7 @@
 
   .labels {
     display: flex;
+    /* flex-wrap: wrap; */
     gap: 1rem;
   }
 
