@@ -1,4 +1,6 @@
 <script>
+  import MethodsLayout from '$lib/components/organisms/MethodsLayout.svelte';
+
     let { data } = $props()
 
     // const { methods } = data
@@ -17,3 +19,5 @@
       <a href="/methods/{method.slug}">Bekijk {method.title}</a>
     </article>
   {/each}   -->
+  <h2>AI methoden</h2>
+  <MethodsLayout {methods} />
