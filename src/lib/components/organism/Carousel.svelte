@@ -38,6 +38,9 @@
       labels: ["Copilot", "Cursor"],
     },
   ];
+
+  let activeIndex =$state(2);
+  console.log("active index", activeIndex);
 </script>
 
 <section class="carousel-container">
