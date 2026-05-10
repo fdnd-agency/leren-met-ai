@@ -68,12 +68,24 @@
     return "is-hidden-right";
   }
 
+function next() {
+  activeIndex=
+  (activeIndex + 1 ) % cards.length;
+  console.log("next index", activeIndex);
+}
+
+function prev() {
+  activeIndex=
+  (activeIndex - 1 + cards.length)
+  % cards.length;
+  console.log("prev index", activeIndex);
+}
 
 
 </script>
 
 <section class="carousel-container">
-  <button class="prev"> </button>
+  <button class="prev" onclick={prev}>  ← </button>
 
   <ul class="carousel">
     {#each cards as card, index}
@@ -90,7 +102,7 @@
     {/each}
   </ul>
 
-  <button class="next"></button>
+  <button class="next" onclick={next}>→</button>
 </section>
 
 <style>
@@ -116,15 +128,15 @@
   }
 
   .card {
-    /* position: absolute;
+    position: absolute;
     top: 50%;
-    left: 50%; */
+    left: 50%;
     width: 220px;
     min-height: 320px;
     border: 1px solid black;
     border-radius: 10px;
     padding: 1rem;
-    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
   }
 
   .card.is-prev {
