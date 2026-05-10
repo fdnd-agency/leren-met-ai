@@ -46,22 +46,27 @@
     // console.log("card index", index);
 
   if (index === activeIndex) {
-    console.log("active")
+    // console.log("active")
     return "is-active";
   }
 
   if (index === activeIndex - 1){
-    console.log("prev")
+    // console.log("prev")
     return "is-prev";
   }
 
   if (index === activeIndex + 1){
-    console.log("next")
+    // console.log("next")
     return "is-next";
   }
 
-  return "";
-}
+  if (index < activeIndex) {
+    // console.log("hidden left")
+    return "is-hidden-left";
+  }
+  // console.log("hidden right")
+    return "is-hidden-right";
+  }
 
 
 
