@@ -180,8 +180,8 @@
   }
 
   .large-logo {
-    width: clamp(180px, 32vw, 260px);
-    transform: translate(40px);
+    width: clamp(160px, 28vw, 230px);
+    transform: translate(24px);
     margin: 0 auto;
     display: block;
   }
@@ -193,7 +193,7 @@
 
   @media (min-width: 425px) {
     .large-logo {
-      width: clamp(200px, 38vw, 280px);
+      width: clamp(180px, 34vw, 250px);
     }
     .teachers {
       width: clamp(240px, 65vw, 420px);
@@ -222,7 +222,7 @@
 
   @media (min-width: 768px) {
     .large-logo {
-      width: clamp(220px, 28vw, 320px);
+      width: clamp(200px, 24vw, 280px);
     }
     .teachers {
       width: clamp(300px, 50vw, 520px);
@@ -239,12 +239,12 @@
     }
 
     .triangle-dark {
-      /* top: 55px; */
+      top: 35px;
       width: clamp(120px, 14vw, 170px); 
     }
 
     .triangle-pink {
-      /* top: 180px; */
+      top: 150px;
       width: clamp(45px, 5vw, 70px);
     }
   }
