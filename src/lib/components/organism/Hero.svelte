@@ -209,51 +209,52 @@
 
   @media (min-width: 768px) {
     .large-logo {
-      width: clamp(240px, 30vw, 360px);
+      width: clamp(220px, 28vw, 320px);
     }
     .teachers {
-      width: clamp(320px, 55vw, 600px);
+      width: clamp(300px, 50vw, 520px);
     }
 
     .pink-robot {
-      width: clamp(100px, 10vw, 140px);
+      width: clamp(70px, 7vw, 100px);
       top: 5px;
       left: 10px;
     }
 
     .light-bulb {
-      width: clamp(100px, 10vw, 150px);
+      width: clamp(70px, 7vw, 100px);
     }
 
     .triangle-dark {
       top: 55px;
-      width: clamp(160px, 20vw, 230px);
-      /* width: clamp(120px, 14vw, 200px); */
+      width: clamp(120px, 14vw, 170px); 
     }
 
     .triangle-pink {
-      top: 220px;
-      width: clamp(65px, 8vw, 110px);
+      top: 180px;
+      width: clamp(45px, 5vw, 70px);
     }
   }
 
   @media (min-width: 1024px) {
     .pink-robot {
-      width: clamp(100px, 10vw, 140px);
-      top: 5px;
+      width: clamp(70px, 6vw, 100px);
+      top: 0;
       left: 10px;
     }
 
     .light-bulb {
-      width: clamp(100px, 10vw, 150px);
+      width: clamp(70px, 6vw, 100px);
     }
 
     .triangle-dark {
-      top: 70px;
+      top: 50px;
+      width: clamp(120px, 12vw, 170px);
     }
 
     .triangle-pink {
-      top: 310px;
+      top: 220px;
+      width: clamp(45px, 4vw, 70px);
     }
   }
 
