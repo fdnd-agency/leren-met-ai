@@ -115,7 +115,7 @@
     /* gap: 1rem; */
     background-color: var(--dark-purple);
     color: var(--white);
-    text-align: center;
+    /* text-align: center; */
     padding: 2rem 1.5rem 4rem;
   }
 
@@ -127,6 +127,15 @@
    margin-bottom: 1rem;
   }
 
+  .intro-title {
+    font-size: clamp(1.5rem,3vw,2.2rem);
+    line-height: 1.1;
+  }
+
+  .intro p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 
   .light-bulb {
     position: absolute;
@@ -172,7 +181,7 @@
 
   .large-logo {
     width: clamp(180px, 32vw, 260px);
-    transform: translate(20px);
+    transform: translate(40px);
     margin: 0 auto;
     display: block;
   }
@@ -264,16 +273,16 @@
 
   @media (min-width: 1200px) {
     .intro {
-     padding: 4em 6em 6em ;
+      padding: 2rem 1.5rem 4rem 6rem;
     }
 
     .intro-title, 
     .intro p {
-      max-width: 1100px;
+      max-width: 900px;
       margin-right: auto;
       margin-left: auto;
       line-height: 1.6;
-    }
+    } 
 
   }
 
