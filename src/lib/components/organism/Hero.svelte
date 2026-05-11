@@ -87,7 +87,8 @@
   .methods-link {
     color: var(--white);
     text-decoration: underline;
-    padding: 0.5rem;
+    padding: 1rem;
+    /* padding: 0.5rem 2rem 0.5rem 0.5rem; */
   }
 
   .hero-images {
@@ -132,6 +133,8 @@
     top: 30px;
     right: 0;
     width: clamp(50px, 7vw, 80px);
+    margin-top: 1em;
+    /* padding: 0.5rem; */
   }
 
   .triangles {
@@ -144,7 +147,7 @@
   .triangle-dark {
     position: absolute;
     /* top: 40px; */
-    top: clamp(40px, 5vw, 80px);
+    top: clamp(30px, 3vw, 50px);
     left: 0;
     width: clamp(70px, 14vw, 120px);
     z-index: 1;
@@ -161,7 +164,7 @@
 
   .pink-robot {
     position: absolute;
-    top: 5px;
+    top: 2px;
     left: 0;
     width: clamp(55px, 8vw, 80px);
     z-index: 0;
@@ -202,8 +205,9 @@
     }
 
     .triangle-pink {
-      top: 140px;
+      top: 125px;
       width: clamp(35px, 6vw, 55px);
+
     }
   }
 
@@ -226,12 +230,12 @@
     }
 
     .triangle-dark {
-      top: 55px;
+      /* top: 55px; */
       width: clamp(120px, 14vw, 170px); 
     }
 
     .triangle-pink {
-      top: 180px;
+      /* top: 180px; */
       width: clamp(45px, 5vw, 70px);
     }
   }
