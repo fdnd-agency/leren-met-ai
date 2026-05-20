@@ -110,6 +110,14 @@
 
 <style>
   /* colors */
+:root {
+  --border: #111111;
+  --card-shadow: #5447a8;
+  --card-bg: #2d1d8d;
+  --label:#f45b8d;
+  --text:  #ffffff;
+}
+
 
   /* carousel */
 
@@ -131,15 +139,20 @@
   }
 
   .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     position: absolute;
     top: 50%;
     left: 50%;
     width: 270px;
     min-height: 320px;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    padding: 1.5rem 1rem 1rem ;
     transform: translate(-50%, -50%);
+    background-color: var(--card-bg);
+    color: var(--text);
   }
 
   .card.is-prev {
@@ -188,7 +201,11 @@
     }
   } */
 
-  .card h3 + p {
+  .card h3 {
+    margin: 0 0 0.2rem;
+  }
+
+  .subtitle {
     margin-top: 0;
     margin-bottom: 1rem;
   }
@@ -206,7 +223,7 @@
   .labels a {
     text-decoration: none;
     border-radius: 20px;
-    border: 1px solid black;
     padding: 8px 16px;
+    background-color: var(--label);
   }
 </style>
