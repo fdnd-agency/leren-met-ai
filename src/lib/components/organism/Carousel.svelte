@@ -48,13 +48,13 @@
    const prevIndex =
   (activeIndex - 1 + cards.length)
   % cards.length;
-  console.log("prev", prevIndex);
+  // console.log("prev", prevIndex);
 
 
   const nextIndex =
   (activeIndex + 1)
   % cards.length;
-  console.log("next", nextIndex);
+  // console.log("next", nextIndex);
   
 
   if (index === activeIndex) {
@@ -110,7 +110,7 @@
 
 <style>
   /* colors */
-:root {
+.carousel-container {
   --border: #111111;
   --card-shadow: #5447a8;
   --card-bg: #2d1d8d;
@@ -156,15 +156,6 @@
     box-shadow: 8px 8px 0px var(--card-shadow) ;
   }
 
-  /* .card::after {
-    content: "";
-    position: absolute;
-    inset: 8px -8px -8px 8px;
-    background-color: var(--card-shadow);
-    border-radius: inherit;
-    z-index: -2;
-  } */
-
   .card.is-prev {
     opacity: 1;
     transform: translate(-160%, -50%) scale(0.9);
@@ -193,24 +184,6 @@
     transform: translate(100%, -50%);
   }
 
-  /* .card:last-child {
-       margin-right: 1em;
-    }
-
-  @media (min-width: 1000px) {
-    .carousel-container{
-        max-width: 1250px;
-    }
-
-    .carousel {
-        padding-right: 0 ;
-    }
-
-    .card:last-child {
-       margin-right: 0;
-    }
-  } */
-
   .card h3 {
     margin: 0 0 0.2rem;
   }
@@ -226,7 +199,6 @@
 
   .labels {
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 1rem;
   }
 
