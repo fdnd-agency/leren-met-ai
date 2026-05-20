@@ -153,18 +153,17 @@
     transform: translate(-50%, -50%);
     background-color: var(--card-bg);
     color: var(--text);
+    box-shadow: 8px 8px 0px var(--card-shadow) ;
   }
 
-  .card::after {
+  /* .card::after {
     content: "";
     position: absolute;
     inset: 8px -8px -8px 8px;
     background-color: var(--card-shadow);
     border-radius: inherit;
-    /* width: 100%; */
-    /* height: 300px; */
-    z-index: -1;
-  }
+    z-index: -2;
+  } */
 
   .card.is-prev {
     opacity: 1;
