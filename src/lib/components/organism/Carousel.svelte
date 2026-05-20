@@ -155,6 +155,17 @@
     color: var(--text);
   }
 
+  .card::after {
+    content: "";
+    position: absolute;
+    inset: 8px -8px -8px 8px;
+    background-color: var(--card-shadow);
+    border-radius: inherit;
+    /* width: 100%; */
+    /* height: 300px; */
+    z-index: -1;
+  }
+
   .card.is-prev {
     opacity: 1;
     transform: translate(-160%, -50%) scale(0.9);
